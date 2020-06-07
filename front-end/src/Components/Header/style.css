@@ -1,0 +1,88 @@
+.fundo{
+
+    background-color: #7A28CB;
+    margin-top: 3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    box-shadow: 0px 2px 10px #0000008f;
+
+}
+
+/*Parte da esquerda*/
+/* Parte da direita*/
+.logo{
+    padding-left: 30px;
+    height: 3.5%;
+    width: 3.5%;
+}
+
+.metas{
+    display: inline;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: 20% ;
+}
+
+
+/*Area de pesquisa*/
+.pesquisar{
+    display: inline;
+    background-color: #e0dfdf;
+    padding-left: 4cm;
+    padding-top: 10px;
+    margin-left: 23cm;
+    margin-right: 40px;
+    border-radius: 30px;
+    vertical-align: 50%;
+    transition: ease-in-out;
+    -webkit-transition: all 0.3s;
+}
+.pesquisar:hover{
+    box-shadow: 0px 2px 5px #0000008f;
+    padding-left: 5cm;
+    margin-left: 22cm;
+    filter: brightness(150%);
+    
+}
+.loopa{
+    padding-right: 5px;
+    align-self: baseline;
+    transition: ease-in-out;
+    -webkit-transition: all 0.3s;
+}
+.pesquisar:hover .loopa{
+    color:#7A28CB;
+    transform: rotate(360deg);
+    vertical-align: -10%;
+}
+
+/*Simbulo de engrenagem*/
+.config{
+    display: inline;
+    color: #ffffff;
+    margin-right: 1cm;
+    vertical-align: 30%;
+    transition: ease-in-out;
+    -webkit-transition: all 0.3s;
+}
+.config:hover{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+/* Simbulo de Logout*/
+.logout{
+    display: inline;
+    grid-area: out;
+    color: #ffffff;
+    vertical-align: 30%;
+    transition: ease-in-out;
+    -webkit-transition: all 0.3s;
+}
+.logout:hover{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+

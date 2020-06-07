@@ -1,0 +1,18 @@
+.task_l{
+    margin: 2cm;
+    border-width: 3px;
+    box-shadow: 0px 2px 10px #0000008f;
+    border-radius: 40px;
+}
+.task_name{
+    color: #2d2d2d
+}
+
+.name_e{
+    color: #2d2d2d
+
+}
+
+.check{
+    color: #2d2d2d
+}

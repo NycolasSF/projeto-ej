@@ -1,12 +1,16 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Listagem from './pages/Listagem/listagem'
+
 import * as serviceWorker from './serviceWorker';
+
+// o certo é ter um arquivo routes para puxar todas as paginas e tudo mais
+// Não vou criar porque não sei se o  time quer assim também.
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Listagem/>
   </React.StrictMode>,
   document.getElementById('root')
 );

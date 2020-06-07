@@ -1,0 +1,40 @@
+.area_botao{
+    background-color: #FFF027;
+    width: min-content;
+    height: min-content;
+    border-radius: 30px;
+    box-shadow: 0px 3px 2px #0000004f;
+    transition: ease-in-out;
+    -webkit-transition: all 0.2s;
+}
+
+.check{ 
+    color:#7A28CB;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    vertical-align: -10%;
+    transition: ease-in-out;
+    -webkit-transition: all 0.2s;
+}
+
+.area_botao:hover{
+    transform: scale(1.1);
+    filter: brightness(150%);
+}
+.area_botao:hover .check{
+    filter: brightness(150%);
+}
+
+.area_botao:active{
+    transform: scale(1.0);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.747) inset;
+    background-color:rgb(155, 149, 39);
+    filter: brightness(100%);
+}
+.area_botao:active .check{
+    transform: scale(1.0);
+    color:rgb(80, 44, 117);
+    filter: brightness(0%);
+}
