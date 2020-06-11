@@ -8,14 +8,14 @@ import './style.css'
 
 
 //função que retorna seu visual
-function Ok() {
+function ButtonSend() {
     return(
-        <div className='area_botao'>
-            <FaCheck className='check' size='40px'/>
-        </div>
+        <button type="submit" className='btn-send'>
+            <FaCheck className='icon-check' size='30'/>
+        </button>
 
     )
 }
 
 // exportanddo para ser usado nas paginas
-export default Ok;
+export default ButtonSend;

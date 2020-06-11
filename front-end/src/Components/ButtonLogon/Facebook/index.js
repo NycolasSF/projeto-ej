@@ -8,13 +8,13 @@ import './style.css'
 
 
 // função que retorna o HTML do iconi + animações
-function Log_facebook() {
+function ButtonFacebook() {
     return (
         
-        <div className='facebook_area'>
-            <FaFacebook size='80' className='facebook_icon' color='#3b5998'/>
-        </div>
+        <button type="button" className='facebook_area'>
+            <FaFacebook size='68' className='facebook_icon' color='#3b5998'/>
+        </button>
     )
 }
 
-export default Log_facebook;
+export default ButtonFacebook;
