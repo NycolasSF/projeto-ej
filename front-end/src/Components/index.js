@@ -16,7 +16,7 @@ export default function CreateComponent(props) {
     let checkedName = nameComponent !== undefined ? nameComponent : false;
     let checkedData = data !== null ? data : null;
 
-    const component = {
+    const components = {
       header: <Header />,
       buttonSend: <ButtonSend />,
       buttonFacebook: <ButtonFacebook />,
@@ -25,10 +25,13 @@ export default function CreateComponent(props) {
     };
 
     const findComponent = () =>{
-        for(const idName in component){
-            if(checkedName && idName === checkedName){
-                return component[idName]
+        if(checkedName){
+            for (const idName in components) { 
+                if (idName === checkedName) {
+                    return components[idName]
+                }
             }
+            return <h1>Component não encontrado !! <strong>Name: {checkedName}</strong></h1> 
         }
     }
 
