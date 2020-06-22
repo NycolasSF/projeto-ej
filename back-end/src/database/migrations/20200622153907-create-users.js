@@ -3,29 +3,29 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
       return queryInterface.createTable('users', {
-        Id: {
+        id: {
           type: Sequelize.INTEGER,
           primaryKey: true,
           autoIncrement: true,
           allowNull:false,
         },
-        Name: {
+        name: {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        Email: {
+        email: {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        Password: {
+        password: {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        On_off: {
+        on_off: {
           type: Sequelize.BOOLEAN,
           allowNull:false,
         },
-        Avatar: {
+        avatar: {
           type: Sequelize.STRING,
           allowNull:false,
         },

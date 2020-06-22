@@ -3,24 +3,24 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('phases', {
-      Id: {
+      id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull:false,
       },
-      TaskId:{
+      taskId:{
         type: Sequelize.INTEGER,
         allowNull:false,
-        references: {model: 'tasks', key: 'Id'},
+        references: {model: 'tasks', key: 'id'},
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
-      Title: {
+      title: {
         type: Sequelize.STRING,
         allowNull:false,
       },
-      On_off: {
+      on_off: {
         type: Sequelize.BOOLEAN,
         allowNull:false,
       },

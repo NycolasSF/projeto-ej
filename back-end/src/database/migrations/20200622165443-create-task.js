@@ -3,39 +3,39 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
       return queryInterface.createTable('tasks', {
-        Id: {
+        id: {
           type: Sequelize.INTEGER,
           primaryKey: true,
           autoIncrement: true,
           allowNull:false,
         },
-        UserId:{
+        userId:{
           type: Sequelize.INTEGER,
           allowNull:false,
-          references: {model: 'users', key: 'Id'},
+          references: {model: 'users', key: 'id'},
           onUpdate: 'CASCADE',
           onDelete: 'CASCADE',
         },
-        Type:{
+        type:{
           type: Sequelize.INTEGER,
           allowNull:false,
-          references: {model: 'types', key: 'Id'},
+          references: {model: 'types', key: 'id'},
           onUpdate: 'CASCADE',
           onDelete: 'CASCADE',
         },
-        Title: {
+        title: {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        Image: {
+        image: {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        InitData: {
+        initData: {
           type: Sequelize.DATE,
           allowNull:false,
         },
-        EndData: {
+        endData: {
           type: Sequelize.DATE,
           allowNull:false,
         },
