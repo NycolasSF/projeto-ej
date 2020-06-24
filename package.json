@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "sequelize-cli": "^5.5.1"
+  }
+}
