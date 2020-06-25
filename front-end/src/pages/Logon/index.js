@@ -17,12 +17,12 @@ function Logon() {
 
                     <button type="submit">Logar</button>
                 </div>
+                    <div className="social-loguin">
+                        <ButtonFB/>
+                        <ButtonGS/>
+                    </div>
             </div>
 
-            <div className="social-loguin">
-                <ButtonFB/>
-                <ButtonGS/>
-            </div>
         </div>
 
 

@@ -3,10 +3,15 @@ div#container  {
     height: 766px;
     background-color: aqua;
     position: relative;
+    border: black;
+    border-radius: 3px solid;
 
     flex-direction: initial;
 }
 div#logon {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     position: absolute;
     width: 492px;
     height: 389px;
