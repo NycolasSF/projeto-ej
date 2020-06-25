@@ -1,8 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 div#container  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto ;
     width: 1366px;
     height: 766px;
     background-color: aqua;
-    position: relative;
     border: black;
     border-radius: 3px solid;
 
