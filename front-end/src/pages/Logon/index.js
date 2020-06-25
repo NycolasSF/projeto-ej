@@ -1,6 +1,6 @@
 import React from 'react'
-import socialFb from '../../Components/ButtonLogon/Facebook/index';
-import socialGs from '../../Components/ButtonLogon/Google/index';
+import ButtonFB from '../../Components/ButtonLogon/Facebook/index';
+import ButtonGS from '../../Components/ButtonLogon/Google/index';
 import './style.css';
 
 function Logon() {
@@ -20,8 +20,8 @@ function Logon() {
             </div>
 
             <div className="social-loguin">
-                <socialFb></socialFb>
-                <socialGs></socialGs>
+                <ButtonFB/>
+                <ButtonGS/>
             </div>
         </div>
 
