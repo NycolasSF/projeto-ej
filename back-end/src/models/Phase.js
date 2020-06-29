@@ -9,7 +9,7 @@ class Phase extends Model{
     })
   }
   static associate(models){
-    this.belongsTo(models.Task, {foreignKey: 'taskId'});
+    this.belongsTo(models.Task, {foreignKey: 'task_id'});
   }
 }
 module.exports = Phase;

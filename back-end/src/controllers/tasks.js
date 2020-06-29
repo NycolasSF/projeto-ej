@@ -6,7 +6,7 @@ const TasksController = {
         return res.status(201).json({title, image, initData, endData });
     },
 
-    async detalheTask(req, res) {
+    async detalheTask(req, res) {//faltou colocar o userId
         const detalheTask={
             title: req.body.title,
             image: req.body.image,
@@ -35,7 +35,7 @@ const TasksController = {
       title:'' ,
       image:'' ,
       initData:'' ,
-      endData:'' 
+      endData:''
     }
     const { title, image, initData, endData } = await Task.update(updateTask,{new: true});
 
