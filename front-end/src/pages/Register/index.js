@@ -2,6 +2,7 @@ import React from 'react'
 
 import imgGirl from '../../assets/imgGirlRegisterPG.svg';
 import paperLogo from '../../assets/imgregisterPG.svg';
+import eyelash from '..//../assets/eye-slash-solid 2 senha.svg';
 
 import './style.css'
 
@@ -20,8 +21,9 @@ function Register() {
                    <input type="email" className="email"/>
                    <span className="senha">Senha:</span>
                    <input type="password" name="password" id="password" className="password"/>
+                   <img src={eyelash} className="eyelash" alt="eyelash"/>
 
-                   <button type="submit" className>REGISTRAR</button>
+                   <button type="submit">REGISTRAR</button>
                </div>
                 <img src={imgGirl} alt="imgRegisterPage" className="girl"/>
            </div>
