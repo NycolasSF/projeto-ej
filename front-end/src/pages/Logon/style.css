@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 div.container {
     position: relative;
     width: 1366px;
@@ -59,12 +61,10 @@ div.left-side span.email{
 
 div.left-side div.logonform input.user {
     position: absolute;
-    left: 4.9%;
-    right: 59.08%;
-    top: 40.73%;
-    bottom: 51.17%;
-    height: 62;
-    width: 492;
+    width: 492px;
+    height: 62px;
+    left: 67px;
+    top: 319px;
     
     background: #FFFFFF;
     opacity: 0.3;
@@ -76,12 +76,10 @@ div.left-side div.logonform input.user {
 
 div.left-side div.logonform input.password{
     position: absolute;
-    left: 4.9%;
-    right: 59.08%;
-    top: 54.7%;
-    bottom: 37.21%;
-    height: 62;
-    width: 492;
+    width: 492px;
+    height: 62px;
+    left: 67px;
+    top: 420px;
 
     background: #FFFFFF;
     opacity: 0.3;
@@ -107,7 +105,7 @@ div.left-side span.senha {
     color: #737373;
 }
 
-div.left-side button {
+div.left-side button.logar {
     position: absolute;
     width: 492px;
     height: 61px;
@@ -127,10 +125,45 @@ div.left-side button {
     color: #FFFFFF;
 }
 
+div.social {
+    position: absolute;
+    width: 226px;
+    height: 96px;
+    left: 200px;
+    top: 604px;
+}
+
+div.social span {
+    position: absolute;
+    width: 226px;
+    height: 34px;
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding-bottom: 30px;
+
+    color: #2D2D2D;
+}
+
+div.buttons + .bgs {
+   
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.social + .bfb {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
 div img.esfera {
     
         position: absolute;
-        width: 1366px;
+        width: 1700px;
         height: 1366px;
         left: -739px;
         top: -324px;
@@ -140,6 +173,7 @@ div img.esfera {
   
 
 }
+
 div.right-side div.textbox span {
     position: absolute;
     width: 453px;
@@ -156,6 +190,7 @@ div.right-side div.textbox span {
     letter-spacing: 0.145em;
 
     color: #000000;
+    z-index: 1;
 }
 
 div.right-side div.textbox p {

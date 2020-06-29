@@ -10,7 +10,7 @@ import imgfrontpage from '../../assets/img_login.svg'
 
 function Logon() {
     return (
-       
+
         <div id='container' className='container'>
             <div className="left-side">
                 <div className="logo">
@@ -22,10 +22,18 @@ function Logon() {
                     <input type="email" className="user" />
                     <span className="senha">Senha:</span>
                     <input type="password" name="password" id="password" className="password" />
-                    <button type="submit">LOGAR</button>
+                    <button className="logar" type="submit">LOGAR</button>
                 </div>
 
-                
+                <div className="social">
+                    <span>Logar com:</span>
+                    <div className="buttons">
+                        <ButtonGS ></ButtonGS>
+                        <ButtonFB ></ButtonFB>
+                    </div>
+                </div>
+
+
             </div>
 
             <div>
@@ -36,9 +44,9 @@ function Logon() {
                 <div className="textbox">
                     <span className='sobrenos'>SOBRE NÓS</span>
                     <p>
-                        Olá, bem-vindo(a) ao seu organizador de séries e filmes favoritos! 
-                        Tudo de forma rápida e fácil, com o que se tem de mais avançado em recursos tecnológicos. 
-                        Uma equipe de desenvolvedores dedicada 24 horas para encontrar a melhor 
+                        Olá, bem-vindo(a) ao seu organizador de séries e filmes favoritos!
+                        Tudo de forma rápida e fácil, com o que se tem de mais avançado em recursos tecnológicos.
+                        Uma equipe de desenvolvedores dedicada 24 horas para encontrar a melhor
                         forma de você se manter organizado durante a pandemia. Tudo isso de forma gratuita! Venha ser organizado com a gente.
                     </p>
                     <div className="img-front-page">
@@ -46,10 +54,10 @@ function Logon() {
                     </div>
                 </div>
             </div>
-        
-    </div>
 
-    
+        </div>
+
+
 
     )
 };
