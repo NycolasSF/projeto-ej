@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-class User extends Model{
+class Phase extends Model{
   static init(sequelize){
     super.init({
       title: DataTypes.STRING,
@@ -12,4 +12,4 @@ class User extends Model{
     this.belongsTo(models.Task, {foreignKey: 'taskId'});
   }
 }
-module.exports = User;
+module.exports = Phase;
