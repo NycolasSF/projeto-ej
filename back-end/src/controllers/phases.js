@@ -10,7 +10,7 @@ const PhasesController = { //criação de uma linha de fase.
         }
 
         const phaseId= await Phase.create(newPhase);
-       //const phase = await Phase.findOne({where: {id: phaseId.id},include:[{where:{taskId: }}]})
+       //const phase = await Phase.findOne({where: {id: phaseId.id},include:[{where:{task_id: }}]})
 
         console.log('etapa criada=================');
 
@@ -24,10 +24,10 @@ const PhasesController = { //criação de uma linha de fase.
     },
 
     async listPhase(req,res){ //listando a fase
-        const {title, on_off} =  await Phase.findById(res.body.taskId)//essa parte ta errada
+        const phases =  await Phase.findAll();
 
 
-        return res.status(201).json({title, on_off });
+        return res.status(201).json(phases);
     },
 
     async alterPhase(req,res){ //alterando a phase

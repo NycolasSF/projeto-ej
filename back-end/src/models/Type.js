@@ -8,7 +8,7 @@ class Type extends Model{
     })
   }
   static associate(models){
-    this.hasMany(models.Task), {foreignKey: 'type'};
+    this.hasMany(models.Task), {foreignKey: 'type_id'};
   }
 }
 module.exports = Type;

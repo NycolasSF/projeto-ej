@@ -16,7 +16,7 @@ module.exports = {
           onUpdate: 'CASCADE',
           onDelete: 'CASCADE',
         },
-        type:{
+        type_id:{
           type: Sequelize.INTEGER,
           allowNull:false,
           references: {model: 'types', key: 'id'},
@@ -31,11 +31,11 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull:false,
         },
-        initData: {
+        init_data: {
           type: Sequelize.DATE,
           allowNull:false,
         },
-        endData: {
+        end_data: {
           type: Sequelize.DATE,
           allowNull:false,
         },
