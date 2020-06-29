@@ -163,16 +163,22 @@ div.social + .bfb {
 div img.esfera {
     
         position: absolute;
-        width: 1700px;
+        width: 1800px;
         height: 1366px;
         left: -739px;
         top: -324px;
     
         background: #FEFEFE;
         box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
-  
+        z-index: 0;
+        
 
 }
+
+div.right-side {
+z-index: 0;
+}
+
 
 div.right-side div.textbox span {
     position: absolute;
@@ -190,7 +196,7 @@ div.right-side div.textbox span {
     letter-spacing: 0.145em;
 
     color: #000000;
-    z-index: 1;
+   
 }
 
 div.right-side div.textbox p {
