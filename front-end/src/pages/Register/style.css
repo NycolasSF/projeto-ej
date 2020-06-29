@@ -1,1 +1,132 @@
 
+div.register{
+    position: absolute;
+    width: 492px;
+    height: 541px;
+    left: 439px;
+    top: 133px;
+}
+
+div.register span.register {
+    position: absolute;
+    width: 255px;
+    height: 39px;
+    left: 558px;
+    top: 133px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.305em;
+
+    color: #2D2D2D;
+}
+
+div.register span.user {
+    position: absolute;
+    width: 229px;
+    height: 24px;
+    left: 462px;
+    top: 225px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #4F4F4F;
+}
+
+div.register input.username {
+    position: absolute;
+    left: 32.14%;
+    right: 31.84%;
+    top: 34.07%;
+    bottom: 57.96%;
+
+    background: #FFFFFF;
+    opacity: 0.3;
+    border: 2px solid #5F5F5F;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+div.register span.email {
+    position: absolute;
+    width: 229px;
+    height: 24px;
+    left: 462px;
+    top: 346px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #4F4F4F;
+}
+
+div.register input.email {
+    position: absolute;
+    left: 32.14%;
+    right: 31.84%;
+    top: 49.61%;
+    bottom: 42.43%;
+
+    background: #FFFFFF;
+    opacity: 0.3;
+    border: 2px solid #5F5F5F;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+div.register span.senha {
+    position: absolute;
+    width: 229px;
+    height: 24px;
+    left: 462px;
+    top: 476px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #4F4F4F;
+}
+
+div.register button {
+    position: absolute;
+    left: 32.14%;
+    right: 31.84%;
+    top: 80.03%;
+    bottom: 12.01%;
+
+    background: #7A28CB;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+img.girl {
+    position: absolute;
+    width: 529px;
+    height: 587px;
+    left: 1007px;
+    top: 179px;
+}
+
+img.paper {
+    position: absolute;
+    width: 265px;
+    height: 265px;
+    left: 87px;
+    top: 18px;
+}
