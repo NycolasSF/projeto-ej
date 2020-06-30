@@ -12,6 +12,7 @@ body {
   font-family: -apple-system, "Open Sans" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 /* NORMALIZE INPUTs */
@@ -24,6 +25,7 @@ button{
   border: none;
   text-decoration: none;
   outline: none;
+  background: none;
   transition:  all ease 0.1s;
 }
 button:hover{
@@ -38,3 +40,4 @@ input[type="search"],
 input[type="text"]{
   cursor: text;
 }
+

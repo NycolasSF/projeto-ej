@@ -1,1 +1,306 @@
+.container-modal{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+}
+.content-modal{
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    max-height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+}
 
+/* MODAL HEADER */
+.content-m-header{
+    position: relative;
+    width: 100%;
+}
+.content-m-header .modal-actions{
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-actions .btn-goBack,
+.modal-actions .btn-editTask{
+    color:#ffff;
+}
+.modal-actions .btn-goBack{
+    margin-left: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.modal-actions .btn-editTask{
+    margin-right: 20px;
+}
+.modal-background{
+    position: relative;
+    border-radius: 30px 30px 0px 0px;
+    overflow: hidden;
+}
+.modal-background .filter-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color;
+}
+.modal-background .filter-image.movie{
+    background: rgba(121, 41, 201, 0.55);
+}
+.modal-background .filter-image.serie{
+    background: rgba(255, 240, 39, 0.55);
+}
+.modal-background .filter-image.anime{
+    background-color: rgba(255, 26, 242, 0.55);
+}
+.modal-background .modal-image{
+    width: 101%;
+    margin-top: -1px;
+}
+
+/* MODAL BODY */
+.content-m-body{
+    margin: 6px 20px;
+}
+.content-m-body .modal-title{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+    color: #2d2d2d;
+    opacity: 0.8;
+}
+/* BAR PROGRESS */
+.content-m-body .content-bar{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 20px;
+}
+.content-m-body .content-bar .bar-full{
+    display: inline-block;
+    width: 95%;
+    height: 100%;
+    background-color: #C6C6C6;
+    border-radius: 40px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+.content-bar .bar-full .bar-progress{
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content-bar .bar-progress.movie{
+    background: rgba(121, 41, 201, 0.55);
+}
+.content-bar .bar-progress.serie{
+    background: rgba(255, 240, 39, 0.55);
+}
+.content-bar .bar-progress.anime{
+    background: rgba(255, 26, 242, 0.55);
+}
+.content-bar p{
+    display: inline-block;
+    width: 5%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+}
+/* PHASES */
+.content-m-body .content-phases ul{
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 100px;
+}
+.content-phases ul::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+.content-phases ul::-webkit-scrollbar-track {
+    background:rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+.content-phases ul::-webkit-scrollbar-thumb {
+    background: #C4C4C4;
+    border-radius: 15px;
+}
+.content-phases ul::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: rgba(90, 90, 90, 0.5);
+}
+.content-m-body .content-phases ul li{ 
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-phases .title-phase{
+    font-family:'Open Sans';
+    color: #2d2d2d;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+}
+.content-phases .btn-delete-phase{
+    background: none;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+/* REFERENCE: https://codepen.io/avstorm/pen/yjLGGN */
+.inp-cbx{
+    display: none;
+}
+.cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #7A28CB;
+  transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #506EEC;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.cbx span:last-child {
+  padding-left: 8px;
+}
+.cbx:hover span:first-child {
+  border-color: #7A28CB;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #7A28CB;
+  border-color: #7A28CB;
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+.content-m-body .btn-add-phase{
+    width: 100%;
+    height: 50px;
+    font-family:'Open Sans';
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.7;
+    transition: all ease 0.1s;
+}
+.content-m-body .btn-add-phase:hover{
+    opacity: 1;
+}
+
+/* MODAL FOOTER  */
+.content-m-footer{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-data {
+    margin-left: 20px;
+}
+.footer-data p {
+    display: inline-block;
+    vertical-align: 5px;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.footer-data .icon-calendar{
+    color: rgba(0, 0, 0, 0.54);
+}
+.btn-delete-task{
+    margin-right: 20px;
+}
+.btn-delete-task .icon-delete-task{
+    color: rgba(154, 26, 26, 0.78);
+}
+/* Fecha o modal ao clicar fora dele */
+.close-modal{
+    cursor: not-allowed;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

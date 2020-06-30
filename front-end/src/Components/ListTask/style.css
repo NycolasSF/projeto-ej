@@ -117,6 +117,7 @@
 
 /* CONTENT SPECIFIC TASK */
 .body-tasks .content-task{
+    cursor: pointer;
     width: 100%;
     height: 200px;
     padding: 10px 20px;
@@ -174,6 +175,8 @@
 /* PHASES */
 .content-task .content-phases ul{
     list-style: none;
+    max-height: 90px;
+    overflow: hidden;
 }
 .content-task .content-phases ul li{ 
     margin: 5px 0;
