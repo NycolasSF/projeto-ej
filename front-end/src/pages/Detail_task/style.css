@@ -54,6 +54,7 @@
 }
 .modal-background{
     position: relative;
+    height: 60px;
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
 }
@@ -132,6 +133,7 @@
     font-weight: bold;
     font-size: 12px;
     text-align: right;
+    opacity: 0.7;
 }
 /* PHASES */
 .content-m-body .content-phases ul{
@@ -176,6 +178,7 @@
     border: none;
     outline: none;
     margin-right: 5px;
+    opacity: 0.6;
 }
 /* REFERENCE: https://codepen.io/avstorm/pen/yjLGGN */
 .inp-cbx{
@@ -252,6 +255,7 @@
     transform: scale(0.9);
   }
 }
+
 .content-m-body .btn-add-phase{
     width: 100%;
     height: 50px;
@@ -265,6 +269,35 @@
 }
 .content-m-body .btn-add-phase:hover{
     opacity: 1;
+}
+.content-m-body .form-add-phase{
+    margin: 20px 0;
+    width: 100%;
+    max-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-add-phase.hidden,
+.btn-add-phase.hidden{
+    display: none;
+}
+.form-add-phase input[type="text"]{
+    flex: 2;
+    height: 50px;
+    padding: 0 20px;
+    background: #FFFFFF;
+    border: 2px solid #B0AEAE;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+}
+.form-add-phase input[type="text"]::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.50);
+}
+.form-add-phase .btn-cancel{
+    opacity: 0.7;
 }
 
 /* MODAL FOOTER  */

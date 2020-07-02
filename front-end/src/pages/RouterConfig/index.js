@@ -14,23 +14,22 @@ import NotFound from "../NotFound";
 export default function RouterConfig (){
 
     let location = useLocation();
-    console.log(location);
     
     let background = location.state && location.state.background;
-
+    
     return( 
         <div>
             <Switch location={background || location}>
                 <Route path="/" exact children={<Logon />} />
                 <Route path="/register" children={<Register />} />
                 <Route path="/dashboard" children={<Dashboard />} />
+                <Route path="/task/create" children={<Create_task />} />
+                <Route path="/task/edit/:id" children={<Edit_task />} />
                 <Route path="/user/config" children={<User_config />} />
                 <Route path="*" children={<NotFound />} />
             </Switch>
             {/* MODALs */}
             {
-                background && <Route path="/task/create" children={<Create_task />} />,
-                background && <Route path="/task/edit/:id" children={<Edit_task />} />,
                 background && <Route path="/task/detail/:id" children={<Detail_task />} />
             }
         </div>

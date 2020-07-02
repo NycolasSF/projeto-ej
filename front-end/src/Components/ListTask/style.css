@@ -5,8 +5,8 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-self: start;
     justify-content: center;
+    border-top: 2px solid #e1e1e1;
 }
 
 

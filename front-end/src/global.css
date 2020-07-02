@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
 *{
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -15,10 +14,15 @@ body {
   position: relative;
 }
 
-/* NORMALIZE INPUTs */
+/* NORMALIZE */
 a{
   text-decoration: none;
 }
+
+ul li {
+  list-style: none;
+}
+
 
 button{
   cursor: pointer;
@@ -26,10 +30,6 @@ button{
   text-decoration: none;
   outline: none;
   background: none;
-  transition:  all ease 0.1s;
-}
-button:hover{
-  transform: scale(1.01);
 }
 
 input {
@@ -41,3 +41,6 @@ input[type="text"]{
   cursor: text;
 }
 
+select:focus{
+   outline: none;
+}

@@ -1,4 +1,5 @@
-.btn-send{
+.btn-cancel{
+    background-color: #FFF027;
     width: 100px;
     height: 50px;
     border-radius: 30px;
@@ -7,17 +8,10 @@
     -webkit-transition: all 0.2s;
     position: relative;
 }
-.btn-send.text {
-    width: 250px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: rgb(15, 15, 15);
 
-}
-
-.btn-send.icon .icon-check{ 
+.btn-cancel .icon-cancel{ 
     position: absolute;
+    color:#d63232;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -25,7 +19,7 @@
     -webkit-transition: all 0.2s;
 }
 
-.btn-send:hover{
+.btn-cancel:hover{
     transform: scale(1.1);
     filter: brightness(110%);
 }
