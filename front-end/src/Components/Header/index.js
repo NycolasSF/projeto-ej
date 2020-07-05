@@ -23,7 +23,7 @@ function Header() {
             <div className="content-actions">
                 <div className='pesquisar'>
                     <form action="/search?">
-                        <input type="search" name="search" className="input-search" />
+                        <input type="text" name="search" className="input-search" />
                         <button type="submit" className="btn-search">
                             <AiOutlineSearch className='loopa'size='30'/>
                         </button>

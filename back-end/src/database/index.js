@@ -13,7 +13,9 @@ Type.init(connection);
 Task.init(connection);
 Phase.init(connection);
 
+User.associate(connection.models);
 Task.associate(connection.models);
 Phase.associate(connection.models);
+Type.associate(connection.models);
 
 module.exports = connection;

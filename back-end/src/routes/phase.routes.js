@@ -6,12 +6,11 @@ const PhasesController = require('../controllers/phases');
 
 
 router.post('/', PhasesController.createPhase);
-/*
-router.put('/id:',PhasesController.completPhase);
-router.put('/id:',PhasesController.alterPhase)
-router.list('/',PhasesController.listPhase);
+router.patch('/id:',PhasesController.completPhase);
+router.put('/id:',PhasesController.alterPhase);
+router.get('/',PhasesController.listPhase);
 router.delete('/id:',PhasesController.deletePhase);
-*/
+
 
 module.exports = router;
 

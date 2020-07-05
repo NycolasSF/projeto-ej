@@ -1,7 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 class User extends Model{
   static init(sequelize){
-    super.init({
+    super.init(
+      {
       name: DataTypes.STRING,
       email: DataTypes.STRING,
       password: DataTypes.STRING,
@@ -10,6 +11,9 @@ class User extends Model{
     },{
       sequelize
     })
+  }
+  static associate(models){
+    this.hasMany(models.Task), {foreignKey: 'user_id'};
   }
 }
 module.exports = User;

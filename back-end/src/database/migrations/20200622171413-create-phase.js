@@ -9,7 +9,7 @@ module.exports = {
         autoIncrement: true,
         allowNull:false,
       },
-      taskId:{
+      task_id:{
         type: Sequelize.INTEGER,
         allowNull:false,
         references: {model: 'tasks', key: 'id'},

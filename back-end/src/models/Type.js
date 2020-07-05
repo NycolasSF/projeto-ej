@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-class Task extends Model{
+class Type extends Model{
   static init(sequelize){
     super.init({
       name: DataTypes.STRING,
@@ -7,5 +7,8 @@ class Task extends Model{
       sequelize
     })
   }
+  static associate(models){
+    this.hasMany(models.Task), {foreignKey: 'type_id'};
+  }
 }
-module.exports = Task;
+module.exports = Type;

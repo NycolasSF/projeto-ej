@@ -63,7 +63,6 @@
 .pesquisar:hover .loopa{
     color:#7A28CB;
     transform: rotate(360deg);
-    vertical-align: -10%;
 }
 
 .content-actions{
