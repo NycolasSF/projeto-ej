@@ -9,6 +9,8 @@ import imgfrontpage from '../../assets/img_login.svg'
 
 
 function Logon() {
+   
+   
     return (
 
         <div id='container' className='container'>
@@ -17,13 +19,13 @@ function Logon() {
                     <img src={logo} alt="Logo" />
                     <span>LOGON</span>
                 </div>
-                <div className="logonform">
-                    <span className="email">Email:</span>
+                <form className="logonform">
+                    <label className="email">Email:</label>
                     <input type="email" className="user" />
-                    <span className="senha">Senha:</span>
+                    <label className="senha">Senha:</label>
                     <input type="password" name="password" id="password" className="password" />
                     <button className="logar" type="submit">LOGAR</button>
-                </div>
+                </form>
 
                 <div className="social">
                     <span>Logar com:</span>

@@ -4,16 +4,17 @@ div.container {
     position: relative;
     width: 1366px;
     height: 766px;
-
     background: #FFFFFF;
+    overflow: hidden;
 }
 div.left-side {
     position: absolute;
     width: 492px;
     height: 389px;
     left: 67px;
-    top: 180px;
+    top: 3px;
     z-index: 1;
+    
 }
 
 div.left-side div.logo img {
@@ -42,7 +43,7 @@ div.left-side div.logo span {
     color: #2D2D2D;
 }
 
-div.left-side span.email{
+div.left-side label.email{
     position: absolute;
     width: 229px;
     height: 24px;
@@ -59,7 +60,7 @@ div.left-side span.email{
 
 }
 
-div.left-side div.logonform input.user {
+div.left-side form.logonform input.user {
     position: absolute;
     width: 492px;
     height: 62px;
@@ -74,7 +75,7 @@ div.left-side div.logonform input.user {
     border-radius: 30px;
 }
 
-div.left-side div.logonform input.password{
+div.left-side form.logonform input.password{
     position: absolute;
     width: 492px;
     height: 62px;
@@ -89,7 +90,7 @@ div.left-side div.logonform input.password{
     border-radius: 30px;
 }
 
-div.left-side span.senha {
+div.left-side label.senha {
     position: absolute;
     width: 229px;
     height: 19px;
@@ -169,7 +170,6 @@ div img.esfera {
         top: -324px;
     
         background: #FEFEFE;
-        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
         z-index: 0;
         
 
